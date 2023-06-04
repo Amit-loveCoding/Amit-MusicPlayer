@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="stylesheet" type="text/css" href="s.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<title>Music Player</title>
+    <script src="https://kit.fontawesome.com/0c69ba4986.js" crossorigin="anonymous"></script>
+	 
+  
+</head>
+<body>
+
+	    <!-- Header Section -->
+
+	    <header class="navbar">
+	    	<div class="titlecombo">
+	    		<div class="logo">
+	    			<img src="MajorProject/logo/images.png" alt="logo">
+	    		</div>
+
+	    		<div class="web-name text-hover">
+	    			<h2>Music</h2>
+	    			<h5>Player</h5>
+	    		</div>
+	    	</div>
+
+	    	<div class="fav">
+	    		<a href="#">
+	    			<h3 class="text-hover">Favourites</h3>
+	    		</a>
+	    	</div>
+
+	    	<div class="searchbox">
+	    		<form action="">
+	    			<button id="search" type="submit"><i class="bi bi-search"></i></button>
+	    			<input type="text" placeholder="Search..." name="Search" id="search">
+	    			<button id="mic" type="submit"><i class="fa-solid fa-microphone"></i></button>
+	    			
+	    		</form>
+	    	</div>
+
+	    	<div class="">
+	    		<i class="bi bi-bell-fill"></i>
+	    	</div>
+
+	    	<div class="">
+	    		<i class='fas fa-user-circle'></i>
+	    	</div>
+	    	
+	    </header>
+
+	    <!-- Main Section -->
+
+	    <main>
+	    	<aside class="aside section-1">
+	    		<!-- Banner Section -->
+	    		<section class="container">
+	    			<div class="box">
+	    				<img src="MajorProject/image/banner/banner1.png" alt="banner1">
+	    				<audio controls>
+ 
+	    			</div>
+
+	    			<div class="box" style="z-index: 1;">
+	    					<img src="MajorProject/image/banner/banner2.jpg" alt="banner2">
+	    			</div>
+
+	    			<div class="box">
+	    				<img src="MajorProject/image/banner/banner3.jpg" alt="banner3">
+	    			</div>
+
+	    		</section>
+
+	    		<!-- Latest Release -->
+
+	    		<section class="latest-releases">
+	    			<h1 class="heading-text"> Latest Releases</h1>
+
+	    			<div class="card">
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    						<img src="MajorProject/image/songImg/riseUp.jpg" alt="">
+	    					</a>
+
+	    					<figcaption class="song-info">
+	    						<h2>Rise Up</h2>
+	    						<p>May 25, 2023</p>
+	    					</figcaption>
+	    				</figure>
+
+	    				<div class="options">
+	    					<input type="checkbox" id="toggle-btn" hidden>
+	    					<label><i class="bi bi-three-dots"></i></label>
+	    				<!-- 	<div class="opt-nav">
+	    					
+	    						<a href="#">Play Now</a>
+	    						<a href="#">Add to Queue</a>
+	    						<a href="#">Add to Playlist</a>
+	    						<a href="#">Get Info</a>
+	    					</div> -->
+	    					<p>2:49</p>
+	    				</div>
+	    			</div>
+
+	    				<div class="card">
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    						<img src="MajorProject/image/songImg/seeYouAgain.png" alt="">
+	    					</a>
+
+	    					<figcaption class="song-info">
+	    						<h2>See You Again</h2>
+	    						<p>May 25, 2023</p>
+	    					</figcaption>
+	    				</figure>
+
+	    				<div class="options">
+	    					<input type="checkbox" id="toggle-btn" hidden>
+	    					<label><i class="bi bi-three-dots"></i></label>
+	    				
+	    					<p>3:57</p>
+	    				</div>
+	    			</div>
+
+	    			<div class="card">
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    						<img src="MajorProject/image/songImg/Moving_On_Marshmello.jpg" alt="">
+	    					</a>
+
+	    					<figcaption class="song-info">
+	    						<h2>Moving On</h2>
+	    						<p>May 25, 2023</p>
+	    					</figcaption>
+	    				</figure>
+
+	    				<div class="options">
+	    					<input type="checkbox" id="toggle-btn" hidden>
+	    					<label><i class="bi bi-three-dots"></i></label>
+	    				
+	    					<p>3:56</p>
+	    				</div>
+	    			</div>
+
+	    			<div class="card">
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    						<img src="MajorProject/image/songImg/selfishLove.jpg" alt="">
+	    					</a>
+
+	    					<figcaption class="song-info">
+	    						<h2>Selfish Love</h2>
+	    						<p>May 25, 2023</p>
+	    					</figcaption>
+	    				</figure>
+
+	    				<div class="options">
+	    					<input type="checkbox" id="toggle-btn" hidden>
+	    					<label><i class="bi bi-three-dots"></i></label>
+	    				
+	    					<p>2:43</p>
+	    				</div>
+	    			</div>
+
+	    			
+	    		</section>
+
+	    		<!-- Popular Artists -->
+
+	    		<section class="popular-artists">
+	    			<h1 class="heading-text">Popular Artists</h1>
+	    			<div class="popular-artist-content">
+	    				
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    				<img src="MajorProject/image/artist/taylorSwift.jpg" alt="">
+	    				<figcaption>Taylor Swift</figcaption>
+	    			     </a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    				<img src="MajorProject/image/artist/selenaGomez.jpg" alt="">
+	    				<figcaption>Selena Gomez</figcaption>
+	    			     </a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    				<img src="MajorProject/image/artist/justinBieber.jpg" alt="">
+	    				<figcaption>Justin Bieber</figcaption>
+	    			     </a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    				<img src="MajorProject/image/artist/shakira.jpg" alt="">
+	    				<figcaption>Shakira</figcaption>
+	    			     </a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="playlist-screen.html">
+	    				<img src="MajorProject/image/artist/katyPerry.jpg" alt="">
+	    				<figcaption>Katy Perry</figcaption>
+	    			     </a>
+	    				</figure>
+
+	    			</div>
+	    		</section>
+
+	    		<!-- Music Station -->
+
+	    		<section class="music-station">
+	    			<figure class="musicS" id="musicS">
+	    				<img src="MajorProject/image/musicstation/musicstation.jpg">
+	    			</figure>
+	    			<div class="music-mood">
+	    				<figure>
+	    					<a href=""><img src="MajorProject/image/station/love.jpg"></a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href=""><img src="MajorProject/image/station/retro.png"></a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href=""><img src="MajorProject/image/station/chill.jpg"></a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href=""><img src="MajorProject/image/station/workout.jpg"></a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href=""><img src="MajorProject/image/station/rock.png"></a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href=""><img src="MajorProject/image/station/pop.jpg"></a>
+	    				</figure>
+	    			</div>
+	    			
+	    		</section>
+
+	    		<!-- Big Music Station -->
+
+	    		<section class="b-music-station">
+	    			<figure>
+	    				<a href="">
+	    					<img src="MajorProject/image/station/party.jpg">
+	    					<p>Party</p>
+	    				</a>
+	    			</figure>
+
+	    			<figure>
+	    				<a href="">
+	    					<img src="MajorProject/image/station/electronics.jpg">
+	    					<p>Electronic</p>
+	    				</a>
+	    			</figure>
+
+	    			<figure>
+	    				<a href="">
+	    					<img src="MajorProject/image/station/roadTrip.png">
+	    					<p>Road Trip</p>
+	    				</a>
+	    			</figure>
+
+	    		
+	    		</section>
+
+	    		<!-- Latest English -->
+
+	    		<section class="latest-song" id="latest-english">
+	    			<h1 class="heading-text">Latest English</h1>
+	    			<div class="latest-song-div">
+	    				<figure>
+	    					<a href="">
+
+	    						<img src="MajorProject/image/songImg/asIAm.png">
+	    						<figcaption class="">
+	    							<h5>As I Am</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/2Much.jpg">
+	    						<figcaption class="">
+	    							<h5>2 Much</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/afraidToSay.jpg">
+	    						<figcaption class="">
+	    							<h5>Afraid To Say</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/BeautifulMistakes.jpg">
+	    						<figcaption class="">
+	    							<h5>Beautiful Mistakes</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/billionera.jpg">
+	    						<figcaption class="">
+	    							<h5>Billionera</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/deadGirl.jpg">
+	    						<figcaption class="">
+	    							<h5>Dead Girl</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				
+
+	    				
+
+	    			</div>
+	    			</section>
+
+	    			<!-- Latest Hindi -->
+
+	    			<section class="latest-song" id="latest-hindi">
+	    			<h1 class="heading-text">Latest Hindi</h1>
+	    			<div class="latest-song-div">
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/befikriyan.jpg">
+	    						<figcaption class="">
+	    							<h5>Befikriyan</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/kamToNahi.jpg">
+	    						<figcaption class="">
+	    							<h5>Kam To Nahi</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/khoobsurat.jpg">
+	    						<figcaption class="">
+	    							<h5>Khoobsurat</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/KyaLogeTum.jpg">
+	    						<figcaption class="">
+	    							<h5>Kya Loge Tum</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				<figure>
+	    					<a href="">
+	    						<img src="MajorProject/image/songImg/senorita.jpg">
+	    						<figcaption class="">
+	    							<h5>Senorita</h5>
+	    							<h6>May 05, 2023</h6>
+	    						</figcaption>
+	    					</a>
+	    				</figure>
+
+	    				</div>
+	    			</section>
+	    		</aside>
+
+	    		<!-- PlayList side bar -->
+
+	    		<aside class=" aside section-2"> 
+	    			<h1 class="heading-text inline">Playlist</h1>
+	    			<h3 class="inline right">Queue</h3>
+
+	    			<div class="playlist">
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>01</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/afterparty6.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>After Party 6</div>
+	    								<p>Litm</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+	    		
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>02</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/astronautInTheOcean.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Astronaut In The Ocean</div>
+	    								<p>Masked Wolf</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+	    			    
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>03</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/BeautifulMistakes.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Beautiful Mistakes</div>
+	    								<p>Maroon 5</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+	    			 
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>04</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/deadGirl.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Dead Girl</div>
+	    								<p>Alan Walker</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+	    			    
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>05</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/dontYouHoldMeDown.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Don't You Hold Me Down</div>
+	    								<p>Alan Walker</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+	    			   
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>06</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/fearless.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Fearless</div>
+	    								<p>Lost Sky</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+
+	    			  
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>07</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/Holdon.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Hold On</div>
+	    								<p>Justin Bieber</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+                      
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>08</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/LittleVoice.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Little Voice</div>
+	    								<p>Sara Bareilles</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+	    			   
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>09</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/Marshmello_-_Leave_Before_You_Love_Me.png" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Leave Before You Love Me</div>
+	    								<p>Marshmello</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+                     
+                     
+	    				<div class="playlist-item">
+	    					<div class="playlist-content">
+	    						<div class="content-left">
+	    							<div style="margin-right: 4px;"><h2>10</h2></div>
+	    							<div class="coverer">
+	    								<img class="small-img inline-block" src="MajorProject/image/songImg/Moving_On_Marshmello.jpg" alt="">
+	    							</div>
+	    							<div>
+	    								<div>Moving On</div>
+	    								<p>Marshmello</p>
+	    							</div>
+	    							
+	    						</div>
+
+	    						<div class="content-right">
+	    							<i class="bi bi-suit-heart"></i>
+	    						</div>
+	    				     </div>
+	    			    </div>
+
+                         </div>
+                     </aside>
+	             </main>
+
+	             <!-- Footer:-Music Player Controls -->
+
+	             <footer>
+	             	<div class="play-song-info trans-bg">
+	             		<div class="con-left trans-bg">
+	             			<div class="footer-img">
+	             				<img class="small-img inline-block"src="MajorProject/image/songImg/loveYouDifferent.jpg" alt="">
+	             			</div>
+	             			<div class="trans-bg">
+	             				<div class="font-mid trans-bg">Love You Different</div>
+	             				<p class="trans-bg">Justin Bieber</p>
+	             			</div>
+	             		</div>
+	             		<div class="con-right trans-bg side-margin-4px">
+	             			<i class="fa-solid fa-ban"></i>
+	             			<i class="fa-regular fa-heart"></i>
+	             		</div>
+	             	</div>
+
+	             	<div class="player trans-bg">
+	             		<div class="player-controls trans-bg">
+	             		<div><i class="fa-solid fa-shuffle"></i></div>
+	             		<div><i class="fa-solid fa-backward-step"></i></div>
+	             		<div><i class="fa-solid fa-play"></i></div>
+	             		<div><i class="fa-solid fa-forward-step"></i></div>
+	             		<div><i class="fa-solid fa-arrow-rotate-left"></i></div>
+	             	</div>
+	             	<div class="slider">
+	             		<div class="time">0:00</div>
+	             		<div class="slide-ctr">
+	             			<input type="range" min="0" max="100" value="0" class="slider" id="myrange">
+	             		</div>
+	             		<div class="time">5:00</div>
+	             	</div>
+	              </div>
+
+	              <div class="extras trans-bg">
+	              	<div><i class="fa-solid fa-list"></i></div>
+	              	<div><i class="fa-solid fa-laptop"></i></div>
+	              	<div><i class="fa-solid fa-volume-high"></i></div>
+	              	<div></div>
+	              	<div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+	              </div>
+	             </footer>
+
+</body>
+</html>
